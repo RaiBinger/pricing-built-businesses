@@ -5,7 +5,10 @@
 }
 
 body {
-
+  width: 1920px;
+  margin: 0 auto;
+  font-family: Roboto, serif, sans-serif;
+  font-weight: 500;
 }
 
 h1,
@@ -21,6 +24,10 @@ li,
 blockquote {
   margin: 0;
   padding: 0;
+  list-style: none;
+  font-family: 'Roboto', serif, sans-serif;
+  font-style: normal;
+  font-weight: 500;
 }
 
 img {
