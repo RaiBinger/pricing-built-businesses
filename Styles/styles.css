@@ -70,13 +70,23 @@
 }
 
 .services__card-image {
-  display: flex;
-  width: 90%;
+  width: 100%;
   min-height: 153px;
+
+}
+
+.services__card-image-box {
+  position: relative;
+  width: 100%;
+  height: 139px;
+  overflow: hidden;
 }
 
 .services__card-image-icon {
-  margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 .services__card-body {
