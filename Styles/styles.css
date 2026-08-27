@@ -8,21 +8,20 @@
 
 .header__title {
   color: #161D25;
-  font-size: 38px;
   font-weight: 700;
+  font-size: 38px;
 }
 
 .header__title-caption {
-  color: #5D7085;
-  font-size: 22px;
-  font-weight: 400;
   padding-right: 10px;
+  color: #5D7085;
+  font-weight: 400;
+  font-size: 22px;
 }
 
 .services__card-list {
   display: flex;
   flex-wrap: wrap;
-  /* align-items: center; */
   justify-content: center;
   gap: 6px;
 }
@@ -32,8 +31,8 @@
   display: flex;
   flex-direction: column;
   width: 266px;
-  min-height: 601px;
   height: auto;
+  min-height: 601px;
   padding: 48px 35px 36px;
   color: white;
 }
@@ -42,44 +41,42 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  list-style-image: url(../Images/Path.svg);
-  list-style-position: inside;
   display: flex;
   justify-content: center;
+  width: 100%;
   padding: 8px 0;
+  list-style-image: url(../Images/Path.svg);
+  list-style-position: inside;
   background-image: linear-gradient(#63D6FE, #5DD4F8);
 }
 
 .banner-item {
   font-size: 14px;
 }
+
 /* Спросил у ИИ как можно изменять расстояние между маркером и строкой */
 /* Мы это пока не проходили */
 
 .banner-item::before {
   content: "";
   display: inline-block;
+  flex-shrink: 0;
   width: 12px;
   height: 12px;
-  background-image: url(../Images/Path.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  flex-shrink: 0;
   margin-right: 5px;
+  background-image: url(../Images/Path.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .services__card-image {
-  min-height: 153px;
-  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 90%;
+  min-height: 153px;
 }
 
-.services__card-image-image {
-  /* object-position: center;
-  object-fit: cover; */
+.services__card-image-icon {
+  margin: auto;
 }
 
 .services__card-body {
@@ -98,9 +95,9 @@
 }
 
 .services__card-header-caption {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.34;
-  font-weight: 400;
 }
 
 .services__card-content {
@@ -119,10 +116,9 @@
 }
 
 .services__card-price-value {
-  font-size: 67px;
+  padding-left: 3px;
   font-weight: 700;
-  /* line-height: 1.2; */
-  /* letter-spacing: 2px; */
+  font-size: 67px;
 }
 
 .services__card-features-list {
@@ -130,13 +126,12 @@
   flex-direction: column;
   gap: 15px;
   list-style-position: inside;
-  /* list-style-image: url(../Images/XMLID_89.svg); */
 }
 
 .services__card-features-list-item {
-  font-size: 14px;
   display: flex;
   align-items: center;
+  font-size: 14px;
 }
 
 /* Спросил у ИИ как можно изменять расстояние между маркером и строкой */
@@ -145,13 +140,13 @@
 .services__card-features-list-item::before {
   content: "";
   display: inline-block;
+  flex-shrink: 0;
   width: 10px;
   height: 10px;
-  background-image: url(../Images/XMLID_89.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  flex-shrink: 0;
   margin-right: 10px;
+  background-image: url(../Images/XMLID_89.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .personal {
@@ -171,16 +166,16 @@
 }
 
 .services__card-button {
-  font-family: Roboto, serif, sans-serif;
-  font-weight: 500;
   width: 100%;
   min-height: 40px;
-  background-color: transparent;
+  margin-top: auto;
   border: 2px solid white;
   border-radius: 2px;
   color: white;
+  font-family: Roboto, serif, sans-serif;
+  font-weight: 500;
   font-size: 14px;
-  margin-top: auto;
+  background-color: transparent;
 }
 
 .button-active {
